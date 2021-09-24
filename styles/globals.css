@@ -3,3 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --red: #db0000;
+  --black: #000;
+  --black-50: #0000007f;
+  --white: #fff;
+  --gray: #564d4d;
+  --wine: #831010;
+}
