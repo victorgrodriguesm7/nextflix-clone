@@ -1,9 +1,9 @@
-interface Topics {
+interface Topic {
     slug: string;
     title: string;
     items: any
 }
 
 export type {
-    Topics
+    Topic
 }

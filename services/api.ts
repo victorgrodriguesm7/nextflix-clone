@@ -1,6 +1,6 @@
 import axios from 'axios';
 import type {
-    Topics
+    Topic
 } from './api_interfaces';
 
 const axiosInstance = axios.create({
@@ -12,8 +12,8 @@ const axiosInstance = axios.create({
 });
 
 const Api = {
-    getHomeList: async function (): Promise<Array<Topics>> {
-        let homeList : Array<Topics> = [
+    getHomeList: async function (): Promise<Array<Topic>> {
+        let homeList : Array<Topic> = [
             {
                 slug: 'originals',
                 title: "Originais do Netflix",
@@ -64,7 +64,7 @@ const Api = {
             .then(({ data }) => data);
     },
     getTrending: async () => {
-        return axiosInstance.get("/tending/all/week")
+        return axiosInstance.get("/trending/all/week")
             .then(({ data }) => data);
     },
     getTopRatedMovies: async () => {
